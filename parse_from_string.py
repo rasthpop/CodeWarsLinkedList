@@ -24,5 +24,3 @@ def linked_list_from_string(s):
 
 
     return linked_list
-
-m = linked_list_from_string("55 -> 45 -> 36 -> 28 -> 21 -> 15 -> 10 -> 6 -> 3 -> 1 -> 0 -> None")
