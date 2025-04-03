@@ -16,17 +16,15 @@ def build_one_two_three():
 
 
 def reverse(head):
-    if head is None:
-        return None
-
-    if head.next is None:
+    if head is None or head.next is None:
         return head
 
-    re
-   
+    reversed_list = reverse(head.next)
+    head.next.next = head
+    head.next = None
 
-    return head
+    return reversed_list
 
 m = build_one_two_three()
 
-reverse(m)
+l = reverse(m)
